@@ -41,7 +41,7 @@ async function run() {
     // Hardwired Query for a part that has partID '12345'
     // const query = { name: '12345' };
     // But we will use the parameter provided with the route
-    const query = { price: req.params.item };
+    const query = { name: req.params.item };
 
     const part = await parts.findOne(query);
     console.log(part);
